@@ -23,11 +23,11 @@ public class Werewolf extends Mutant implements Animal, Human{
 
     @Override
     public String sound() {
-        return null;
+        return (isHumanForm) ? "No sound in human form." : "Howl!";
     }
 
     @Override
     public String speak() {
-        return null;
+        return (isHumanForm) ? "I am a human." : "I cannot speak in wolf form.";
     }
 }
